@@ -1,0 +1,33 @@
+As a user I want to be able to
+
+Categories
+- view all of the categories, so that I can select one
+  - view the categories' names
+
+Products
+- view a product, so that I can decide to buy it or not
+  - view the product's name
+  - view the product's category
+  - view the product's price
+  - view the product's description
+  - view the product's image
+- view similar products that have high reviews (products in the same category that are not selected), so that I can see
+
+Sessions
+- sign in to the site, so that I can purchase something
+- sign out of the site, so that I can feel safe
+- create a log in, so that I can register to buy something
+
+Users
+- edit my profile, so that I can keep my information current
+- delete my profile, so that I can disassociate myself from the site
+
+Shopping Carts
+- add a product to my cart, so that I can purchase it
+- view my shopping cart, so that I can see what I was going to buy
+- delete a product from my cart, so that my cart can reflect what I want
+
+Reviews
+- create a review for a product, so that others can know my opinion
+- delete my review for the product, so that I can remove something I wanted earlier but don't want now
+- view reviews for a product, so that I can decide to purchase it or not

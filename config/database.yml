@@ -17,8 +17,6 @@
 development:
   adapter: postgresql
   encoding: unicode
-  username: user
-  host: localhost
   database: amozin_development
   pool: 5
 
@@ -56,5 +54,4 @@ production:
   encoding: unicode
   database: amozin_production
   pool: 5
-  username: <%= ENV['AMOZIN_DATABASE_PASSWORD'] %>
 

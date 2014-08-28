@@ -20,7 +20,10 @@ development:
   database: amozin_development
   pool: 5
 <<<<<<< HEAD:config/database.yml
+<<<<<<< HEAD:config/database.yml
 
+=======
+>>>>>>> master:amozin/config/database.yml
 =======
 >>>>>>> master:amozin/config/database.yml
 
@@ -52,7 +55,10 @@ test:
   pool: 5
 
 <<<<<<< HEAD:config/database.yml
+<<<<<<< HEAD:config/database.yml
 
+=======
+>>>>>>> master:amozin/config/database.yml
 =======
 >>>>>>> master:amozin/config/database.yml
 

@@ -1,15 +1,17 @@
 class ProductsController < ApplicationController
   def index
-    @categories = Category.all
+    @product = Product.all
   end
 
   def new
+
   end
 
   def create
   end
 
   def show
+    @product = Product.find(params[:id])
   end
 
   def edit

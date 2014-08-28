@@ -1,4 +1,4 @@
-[ ![Codeship Status for bobolinks-2014/Amozin](www.codeship.io/projects/c0291860-10f1-0132-f222-0e0e1e0e9e00/status)](https://www.codeship.io/projects/32934) 
+[![Codeship Status for bobolinks-2014/Amozin](www.codeship.io/projects/c0291860-10f1-0132-f222-0e0e1e0e9e00/status)](https://www.codeship.io/projects/32934) 
 <h1> AMOZIN </h1>
 
 <h2> PURPOSE </h2>

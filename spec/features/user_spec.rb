@@ -9,27 +9,44 @@ feature 'User browsing the website' do
     end
 
     it 'sees a login link' do
-      pending
+      visit categories_path
+      expect(page).to have_content "Login"
     end
 
-    it 'sees a register link' do
-      pending
+    it 'sees a SignUp link' do
+      visit categories_path
+      expect(page).to have_content "SignUp"
     end
 
     it 'sees a logout link if logged in' do
-      pending
+      visit categories_path
+      expect(page).to have_content "LogOut"
     end
 
   end
 
   context 'on category page' do
     it 'sees a list of products' do
+      category = Category.create(name: 'Snippets')
+      Product.create( name: 'Meatball Skateboard',
+                      price: 2,
+                      description: 'Greate way to get around town while staying off the hangry train',
+                      category_id: category.id)
+      visit category_path(category)
+      expect(page).to have_content "Meatball Skateboard"
     end
 
     it "sees a product's category" do
     end
 
     it 'sees a products price' do
+      category = Category.create(name: 'Snippets')
+      Product.create( name: 'Meatball Skateboard',
+                      price: 2,
+                      description: 'Greate way to get around town while staying off the hangry train',
+                      category_id: category.id)
+      visit category_path(category)
+      expect(page).to have_content "2"
     end
 
     it 'sees a products description' do
@@ -69,6 +86,9 @@ feature 'User browsing the website' do
     end
 
     it 'allows user to remove a product from the cart' do
+    end
+
+    it 'Shopping cart empties after user purchases items' do
     end
   end
 

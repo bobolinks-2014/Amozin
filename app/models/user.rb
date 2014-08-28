@@ -3,4 +3,7 @@ class User < ActiveRecord::Base
   has_secure_password
   validates :password, :length => { :minimum => 6 }
   validates :email, uniqueness: true, :format => /.+@.+\..+/
+
+  extend FriendlyId
+  friendly_id :name, use: :slugged 
 end

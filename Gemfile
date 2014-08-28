@@ -34,6 +34,8 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'capybara', '~> 2.2.1'
+  gem 'database_cleaner', '~> 1.2.0'
 end
 
 group :test do
@@ -42,7 +44,7 @@ group :test do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'

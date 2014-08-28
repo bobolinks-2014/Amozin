@@ -19,13 +19,7 @@ development:
   encoding: unicode
   database: amozin_development
   pool: 5
-<<<<<<< HEAD:config/database.yml
-<<<<<<< HEAD:config/database.yml
 
-=======
->>>>>>> master:amozin/config/database.yml
-=======
->>>>>>> master:amozin/config/database.yml
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -54,13 +48,6 @@ test:
   database: amozin_test
   pool: 5
 
-<<<<<<< HEAD:config/database.yml
-<<<<<<< HEAD:config/database.yml
-
-=======
->>>>>>> master:amozin/config/database.yml
-=======
->>>>>>> master:amozin/config/database.yml
 
 production:
   adapter: postgresql

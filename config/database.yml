@@ -17,6 +17,8 @@
 development:
   adapter: postgresql
   encoding: unicode
+  username: user
+  host: localhost
   database: amozin_development
   pool: 5
 

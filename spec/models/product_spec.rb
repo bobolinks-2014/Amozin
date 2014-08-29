@@ -23,7 +23,7 @@ let(:product2) {Product.new( name: 'Canaries in Cantaloupes',
                       description: 'Great way to get around town while staying off the hangry train',
                       category_id: category.id)}
 
-  it "'s method show_all_other_products should not include itself" do
+  it "has method show_all_other_products that should not include itself" do
     expect(product2.show_all_other_products).not_to include(product1)
   end
 

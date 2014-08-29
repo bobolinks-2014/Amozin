@@ -14,6 +14,13 @@
     <li><%= review.content %></li>
   <% end %>
 
-  <%= link_to "Review Product",  new_category_product_review_path %>
+  <h1> Review for <%= @product.name %> <h1>
 
+  <%= form_for @review, url: category_product_reviews_path(@category, @product) do |f| %>
+    <%= f.label :rating %>
+    <%= f.text_field :rating %><br/>
+    <%= f.label :content %>
+    <%= f.text_area :content %><br/>
+  <%= f.submit %>
+  <% end %>
 </ul>

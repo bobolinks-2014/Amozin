@@ -10,7 +10,7 @@ feature 'User browsing the website' do
 
     it 'sees a login link' do
       visit categories_path
-      expect(page).to have_content "Login"
+      expect(page).to have_content "Log in"
     end
 
     it 'sees a SignUp link' do
@@ -18,28 +18,16 @@ feature 'User browsing the website' do
       expect(page).to have_content "SignUp"
     end
 
-    it 'sees a logout link if logged in' do
-      visit categories_path
-      expect(page).to have_content "LogOut"
-    end
-
-  end
-
-  context '' do
-    xit 'allows a session to be created' do
-    end
-
-    xit 'allows a session to be destroyed' do
-    end
-
-    it 'can create a login' do
-      @user = User.create(username: "Rob",
+    it 'can login' do
+      @user = User.create!(username: "Rob",
                           email: "Rob@rob.com",
-                          password: "robrob")
-      expect{visit root_url
-      fill_in :email, :with => @user.email
-      fill_in :password, :with => @user.password
-      click_button "Log in"}.to have_content "Log out"
+                          password: "robrob",
+                          password_confirmation: "robrob")
+      visit root_url
+      fill_in 'email', with: @user.email
+      fill_in 'password', with: @user.password
+      click_button "Log in"
+      expect(page).to have_content "logout"
 
     end
   end

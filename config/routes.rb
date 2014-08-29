@@ -1,18 +1,16 @@
 Amozin::Application.routes.draw do
 
-resources :categories do
-  resources :products do
-    resources :reviews do
+  resources :categories do
+    resources :products do
+      resources :reviews do
+      end
     end
   end
-end
 
-
-
+  root :to => "categories#index"
 
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
-  root :to => "users#new"
   resources :users
   get "signup" => "users#new", :as => "signup"
   resources :sessions

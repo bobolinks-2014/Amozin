@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Amozin</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div id="container">
-    <% flash.each do |name, msg| %>
-      <%= content_tag :div, msg, :id => "flash_#{name}" %>
-    <% end %>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <!-- Sign In -->
+  <nav>
+    <div class="right-nav">
+      <% if flash[:error] %>
+        <h1><%= flash[:error] %></h1>
+      <% end %>
+      <% if current_user.present? %>
+        <%= link_to current_user, :class => 'user-name' do %><%= current_user.username%><% end %> | <%= link_to 'logout', logout_path %>
+      <% else %>
+        <h1>Log in</h1>
+      <%= form_tag sessions_path do %>
+        <div class="field">
+          <%= label_tag :email %>
+          <%= text_field_tag :email, params[:email] %>
+        </div>
+      <div class="field">
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
+      </div>
+      <div class="actions"><%= submit_tag "Log in" %></div>
+        <%= link_to 'SignUp', new_user_path %>
+              <% end %>
+      <% end %>
+    </div>
+  </nav>
+  <body>
     <%= yield %>
-  </div>
-</body>
+  </body>
 </html>

@@ -7,6 +7,6 @@ class User < ActiveRecord::Base
   validates :email, uniqueness: true, :format => /.+@.+\..+/
 
   extend FriendlyId
-  friendly_id :name, use: [:slugged, :history]
+  friendly_id :username, use: [:slugged, :history]
 
 end

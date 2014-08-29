@@ -8,4 +8,12 @@
   <% @product.show_all_other_products.each do |product| %>
     <li><%= product.name %></li>
   <% end %>
+
+  <% @product.reviews.each do |review| %>
+    <li><%= review.rating %></li>
+    <li><%= review.content %></li>
+  <% end %>
+
+  <%= link_to "Review Product",  new_category_product_review_path %>
+
 </ul>

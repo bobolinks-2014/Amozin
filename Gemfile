@@ -28,8 +28,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'friendly_id', '~> 5.0.0'
-gem 'coveralls', require: false
-gem 'simplecov', :require => false, :group => :test
+# gem 'coveralls', require: false
+# gem 'simplecov', :require => false, :group => :test
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

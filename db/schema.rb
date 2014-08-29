@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140829023058) do
+ActiveRecord::Schema.define(version: 20140829154739) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,62 +26,42 @@ ActiveRecord::Schema.define(version: 20140829023058) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "slug"
   end
-
-  add_index "categories", ["slug"], name: "index_categories_on_slug", using: :btree
-
-  create_table "friendly_id_slugs", force: true do |t|
-    t.string   "slug",                      null: false
-    t.integer  "sluggable_id",              null: false
-    t.string   "sluggable_type", limit: 50
-    t.string   "scope"
-    t.datetime "created_at"
-  end
-
-  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree
-  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
-  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
-  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "item_to_buys", force: true do |t|
-    t.integer  "product_id"
     t.integer  "cart_id"
+    t.integer  "product_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "products", force: true do |t|
     t.string   "name"
-    t.integer  "price"
+    t.string   "price"
+    t.string   "image_url"
     t.string   "description"
     t.integer  "category_id"
-    t.string   "image_url"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "slug"
   end
 
-  add_index "products", ["slug"], name: "index_products_on_slug", using: :btree
-
   create_table "reviews", force: true do |t|
-    t.integer  "user_id"
     t.integer  "product_id"
-    t.string   "content"
-    t.string   "rating"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sessions", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
-    t.string   "username"
     t.string   "password_digest"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "slug"
   end
-
-  add_index "users", ["slug"], name: "index_users_on_slug", using: :btree
 
 end

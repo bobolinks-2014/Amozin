@@ -1,12 +1,8 @@
 class User < ActiveRecord::Base
-  # attr_accessible :email, :password, :password_confirmation
-
-  has_many :reviews
   has_secure_password
-  validates :password, :length => { :minimum => 6 }
-  validates :email, uniqueness: true, :format => /.+@.+\..+/
+  has_many :reviews
 
-  extend FriendlyId
-  friendly_id :name, use: [:slugged, :history]
 
+  validates :password, length: { minimum: 6 }
+  validates :email,  uniqueness: { case_sensitive: true }
 end

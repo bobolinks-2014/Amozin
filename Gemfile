@@ -38,6 +38,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'capybara', '~> 2.2.1'
   gem 'database_cleaner', '~> 1.2.0'
+  gem "better_errors"
+  gem "binding_of_caller"
+
 end
 
 group :test do

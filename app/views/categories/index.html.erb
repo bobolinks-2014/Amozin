@@ -1,6 +1,22 @@
+
+<H1>Featured Products</H1>
+
+<ul data-orbit>
+  <li><%= image_tag("bacon.jpeg")%></li>
+  <li><%= image_tag("cheesy_poofs.jpeg")%></li>
+  <li><%= image_tag("colon_blow.jpg")%></li>
+  <li><%= image_tag("duff.jpeg")%></li>
+  <li><%= image_tag("gum.jpeg")%></li>
+
+</ul>
 <ul>
   <% @categories.each do |category| %>
    <li><%= link_to category.name, category_path(category) %> </li>
+    <ul data-orbit>
+      <% category.products.each do |product| %>
+        <li><%= image_tag(product.image_url) %></li>
+      <% end %>
+        </ul>
   <% end %>
 </ul>
 

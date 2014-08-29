@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+
 food = Category.new(name: "Flexible Food")
 
 Product.new(name: "Squeeze Bacon",
@@ -15,7 +16,7 @@ Product.new(name: "Squeeze Bacon",
 			category_id: food.id)
 
 Product.new(name: "Cheesy Poofs",
-			description:"Any puffed grain snack which is flavored like cheese, such as Cheet-o's, but in particular various generic 'Cheese Puffs' which are round and.. poofy. 
+			description:"Any puffed grain snack which is flavored like cheese, such as Cheet-o's, but in particular various generic 'Cheese Puffs' which are round and.. poofy.
 				(as a matter of fact, my sister used this term a lot before southpark was launched.)",
 			price: 3.50,
 			image_url:"https://raw.githubusercontent.com/bobolinks-2014/Amozin/seed/images/cheesy_poofs.jpeg",
@@ -54,3 +55,17 @@ Product.new(name: "Unicorn Meat",
 
 meds = Category.new(name: "Mediocre Medical")
 future = Category.new(name: "Futuristic Features")
+
+category = Category.create(name: 'Snippets')
+
+Product.create( name: 'Meatball Skateboard',
+                      price: 2,
+                      description: 'Greate way to get around town while staying off the hangry train',
+                      category_id: category.id)
+
+Product.create( name: 'Canaries in Cantaloupes',
+                      price: 3.8,
+                      image_url: "http://cdn0.lostateminor.com/wp-content/uploads/2012/01/funny-fake-products2.jpg",
+                      description: 'Great way to get around town while staying off the hangry train',
+                      category_id: category.id)
+

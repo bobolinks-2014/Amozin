@@ -4,9 +4,9 @@ resources :categories do
   resources :products
 end
 
+  root :to => "categories#index"
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
-  root :to => "users#new"
   resources :users
   get "signup" => "users#new", :as => "signup"
   resources :sessions

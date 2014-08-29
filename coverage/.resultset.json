@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/environment.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/application.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/application.rb": [
         1,
         null,
         null,
@@ -38,13 +38,13 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/boot.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/boot.rb": [
         null,
         1,
         null,
         1
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/environments/test.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/environments/test.rb": [
         1,
         null,
         null,
@@ -82,7 +82,7 @@
         1,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/initializers/backtrace_silencers.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -91,13 +91,85 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/initializers/filter_parameter_logging.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/initializers/inflections.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/initializers/friendly_id.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -115,14 +187,32 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/initializers/mime_types.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/initializers/secret_token.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/apprentice/Desktop/amazin/Amozin/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -136,12 +226,12 @@
         null,
         1
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/initializers/session_store.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/initializers/wrap_parameters.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -157,12 +247,19 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/config/routes.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/config/routes.rb": [
         1,
         null,
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null,
@@ -220,12 +317,14 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/app/helpers/application_helper.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/app/helpers/application_helper.rb": [
         1,
+        1,
+        0,
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/app/controllers/products_controller.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/app/controllers/products_controller.rb": [
         1,
         1,
         0,
@@ -252,23 +351,30 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/app/controllers/application_controller.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/app/controllers/application_controller.rb": [
         1,
         null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        4,
         null,
         1,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/controllers/reviews_controller_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/controllers/reviews_controller_spec.rb": [
 
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/controllers/session_controller_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/controllers/session_controller_spec.rb": [
 
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/features/products_controller_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/features/products_controller_spec.rb": [
 
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/features/products_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/features/products_spec.rb": [
         1,
         null,
         1,
@@ -357,7 +463,7 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/features/user_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/features/user_spec.rb": [
         1,
         null,
         1,
@@ -393,6 +499,14 @@
         null,
         null,
         1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
         null,
         null,
         null,
@@ -421,7 +535,7 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/models/cart_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/models/cart_spec.rb": [
         1,
         null,
         1,
@@ -436,13 +550,13 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/app/models/cart.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/app/models/cart.rb": [
         1,
         1,
         1,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/models/category_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/models/category_spec.rb": [
         1,
         null,
         1,
@@ -457,15 +571,18 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/app/models/category.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/app/models/category.rb": [
+        1,
+        1,
+        null,
         1,
         1,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/models/item_to_buy_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/models/item_to_buy_spec.rb": [
 
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/models/product_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/models/product_spec.rb": [
         1,
         null,
         1,
@@ -505,18 +622,23 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/app/models/product.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/app/models/product.rb": [
         1,
         1,
         1,
         1,
         null,
+        null,
         1,
         1,
+        null,
+        1,
+        1,
+        null,
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/models/review_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/models/review_spec.rb": [
         null,
         null,
         null,
@@ -528,19 +650,19 @@
         2,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/app/models/review.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/app/models/review.rb": [
         1,
         1,
         1,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/models/session_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/models/session_spec.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/spec/models/user_spec.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -563,8 +685,10 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/app/models/user.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/app/models/user.rb": [
         1,
+        null,
+        null,
         1,
         1,
         1,
@@ -572,9 +696,10 @@
         null,
         1,
         1,
+        null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/app/controllers/categories_controller.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/app/controllers/categories_controller.rb": [
         1,
         1,
         4,
@@ -600,13 +725,13 @@
         null,
         null
       ],
-      "/home/ks8/Dropbox/dev_bootcamp/bobo/3_phase/7_week/Amozin/app/models/item_to_buy.rb": [
+      "/Users/apprentice/Desktop/amazin/Amozin/app/models/item_to_buy.rb": [
         1,
         1,
         1,
         null
       ]
     },
-    "timestamp": 1409275339
+    "timestamp": 1409340556
   }
 }

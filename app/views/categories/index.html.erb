@@ -2,17 +2,12 @@
 <div id="header">
 <h1>Welcome to Amozin</h1>
 </div>
-<div id="nav">
-<p>if not logged in show:</p>
-  <form>Email: Password:</form>
-  <a href="#">Login</a>
-  <p>Or SignUp</p>
-<p>else</p>
-  <form>show LogOut</form>
-</div>
+
 <ul>
   <% @categories.each do |category| %>
     <li><%= category.name %></li>
   <% end %>
 </ul>
 </div>
+
+

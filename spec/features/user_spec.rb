@@ -25,14 +25,22 @@ feature 'User browsing the website' do
 
   end
 
-  context 'checking sessions' do
+  context '' do
     xit 'allows a session to be created' do
     end
 
     xit 'allows a session to be destroyed' do
     end
 
-    xit 'allows a user to create a login' do
+    it 'can create a login' do
+      @user = User.create(username: "Rob",
+                          email: "Rob@rob.com",
+                          password: "robrob")
+      expect{visit root_url
+      fill_in :email, :with => @user.email
+      fill_in :password, :with => @user.password
+      click_button "Log in"}.to have_content "Log out"
+
     end
   end
 

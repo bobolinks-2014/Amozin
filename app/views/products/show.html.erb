@@ -9,7 +9,8 @@
     <li><%= product.name %></li>
 
   <% end %>
-
+<a href="#" class="button">Buy</a>
+<%= button_to "Add to Cart", item_to_buys_path(:product_id => @product.id) %>
   <% @product.reviews.each do |review| %>
     <li><%= review.rating %></li>
     <li><%= review.content %></li>

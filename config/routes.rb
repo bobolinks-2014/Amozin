@@ -8,12 +8,13 @@ Amozin::Application.routes.draw do
   end
 
   root :to => "categories#index"
-
+  resources :item_to_buys
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   resources :users
   get "signup" => "users#new", :as => "signup"
   resources :sessions
+  resources :carts, only: [:show,:update]
 # post '/login' => 'sessions#new', as: :login
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -14,4 +14,7 @@
   <% end %>
   Total : $<%= current_cart.total_price %>
   </ul>
+ <%= form_tag(current_cart, method: "delete") do %>
+    <%= submit_tag "Clear All Items" %>
+  <% end %>
 

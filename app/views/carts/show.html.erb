@@ -2,20 +2,16 @@
 
   <ul>
   <% current_cart.item_to_buys.each do |item| %>
-    <%= item.product.name %>
-    <%= item.product.class %>
-  <%= form_for item do |f| %>
-      <%= f.label item.product.name %>
-      <%= f.text_field :quantity %>
-    <%= f.submit %>
+    <%= form_for item do |f| %>
+      <%= item.product.name %>
+      <p>Price : $ <%= item.product.price %></p>
+      <%= f.number_field(:quantity, in: 1..100) %>
+      <%= f.submit %>
     <% end %>
-
-  <%= form_tag(item, method: "delete") do %>
-  <%= submit_tag "Delete" %>
-<% end %>
-
-    <!-- <li><%= item.product.name %> <%= item.quantity %></li> -->
-  <!--   form_tag(search_path, method: "patch") -->
+    <%= form_tag(item, method: "delete") do %>
+      <%= submit_tag "Delete" %>
     <% end %>
+  <% end %>
+  Total : $<%= current_cart.total_price %>
   </ul>
 

@@ -7,11 +7,12 @@
 }
 
 .category_home .item{
+  vertical-align: top;
   display: inline-block;
   margin-right: 5%;
   margin-bottom: 5%;
   border-bottom: 1px solid darkgray;
-  height: 300px;
+  height: 305px;
   width: 250px;
 /*  box-shadow: 10px 10px 5px #888888;*/
 }
@@ -24,4 +25,10 @@
 
 .category_home .item p{
   text-align: center;
+  margin-bottom: 0px;
+}
+
+.category_home .fa{
+  margin-top: 5px;
+  color: darkgray;
 }

@@ -7,6 +7,9 @@
   <div class="item">
     <div class="image"><%= link_to image_tag(product.image_url),  category_product_path(@category, product)%></div>
     <p><%= product.name %></p>
+    <% product.average_review.times do %>
+      <i class="fa fa-star"></i>
+    <% end %>
   </div>
   <% end %>
 </ul>

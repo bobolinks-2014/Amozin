@@ -8,8 +8,14 @@ class ItemToBuysController < ApplicationController
   end
 
   def update
-    item = ItemToBuy.find(params[:id])
+   item = ItemToBuy.find(params[:id])
     item.update_attributes({quantity: params[:item_to_buy][:quantity]})
+    redirect_to cart_path(current_cart)
+  end
+
+  def destroy
+   item = ItemToBuy.find(params[:id])
+   item.destroy
     redirect_to cart_path(current_cart)
   end
 

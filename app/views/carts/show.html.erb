@@ -1,0 +1,8 @@
+<h1>Shopping cart</h1>
+
+  <ul>
+  <% current_cart.item_to_buys.each do |item| %>
+    <li><%= item.product.name %></li>
+    <% end %>
+  </ul>
+

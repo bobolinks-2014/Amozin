@@ -3,36 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
-  <!-- Sign In -->
-  <nav>
-    <div class="right-nav">
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><%= link_to 'Amozin!', root_path %></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+
+    <ul class="right">
       <% if flash[:error] %>
         <h1><%= flash[:error] %></h1>
       <% end %>
       <% if current_user.present? %>
-        <%= link_to current_user, :class => 'user-name' do %><%= current_user.username%><% end %> | <%= link_to 'logout', logout_path %>
+          <%= link_to current_user.username, edit_user_path(current_user) %>
+        | <%= link_to 'logout', logout_path, class: "button" %>
       <% else %>
-        <h1>Log in</h1>
-      <%= form_tag sessions_path do %>
-        <div class="field">
-          <%= label_tag :email %>
-          <%= text_field_tag :email, params[:email] %>
-        </div>
-      <div class="field">
-        <%= label_tag :password %>
-        <%= password_field_tag :password %>
-      </div>
-      <div class="actions"><%= submit_tag "Log in" %></div>
-        <%= link_to 'SignUp', new_user_path %>
-              <% end %>
+        <%= form_tag sessions_path do %>
+          <li>Email: </li><li><%= text_field_tag :email, params[:email] %></li>
+          <li>Password: </li><li><%= password_field_tag :password %></li>
+          <li><%= submit_tag "Log in", class: "button" %></li>
+          <li><%= link_to 'SignUp', new_user_path %></li>
+        <% end %>
       <% end %>
-    </div>
-  </nav>
+    </ul>
+
+    <!-- Left Nav Section -->
+
+  </section>
+</nav>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.orbit.js"></script>
   <body>
+
     <%= yield %>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>

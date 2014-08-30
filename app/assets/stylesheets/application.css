@@ -10,9 +10,9 @@
  *
  *= require_self
  *= require foundation_and_overrides
-
  *= require_tree .
  */
+
 #header{
   padding: 10px;
   width: 100%;
@@ -38,7 +38,7 @@ nav form{
   text-decoration: none;
   color: white;
   position: relative;
-  bottom: 55px;
+
 }
 
 nav a:hover {

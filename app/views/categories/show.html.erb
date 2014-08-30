@@ -1,9 +1,16 @@
-<h1> <%= @category.name %> </h1>
+<div class="category_home">
 
-</div>
-<ul>
+<h3> <%= @category.name %> </h3>
+
+<ul class="clearing-thumbs small-block-grid-4" data-clearing>
   <% @category.products.each do |product| %>
-    <li> <%= link_to product.name, category_product_path(@category, product) %></li>
+    <div class="item">
+      <li><a href="path/to/your/img"><img data-caption="caption here..." src="path/to/your/img-th"></a></li>
+
+
+    <li><img data-caption= <%= link_to product.name, category_product_path(@category, product) %> src= > </li>
+    </div>
   <% end %>
 </ul>
+
 </div>

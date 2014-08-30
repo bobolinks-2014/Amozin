@@ -8,8 +8,8 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
  *= require foundation_and_overrides
+ *= require_self
  *= require_tree .
  */
 
@@ -18,7 +18,7 @@
   width: 100%;
   background-color: black;
   color: white;
-  height: 70px;
+  height: 80px;
 }
 
 #nav{
@@ -27,6 +27,19 @@
   /*position: relative;*/
   word-spacing: 15px;
   padding-top: 10px;
+
+}
+
+.errors{
+  display: block;
+  color: red;
+  margin-right: 25px;
+  margin-bottom: 0px;
+}
+
+nav h1{
+  margin-left: 25px;
+  letter-spacing: 24px;
 }
 
 nav form {
@@ -38,11 +51,38 @@ nav form{
   text-decoration: none;
   color: white;
   position: relative;
-
 }
 
-nav a:hover {
+nav li{
+  margin-right: 10px;
+}
+
+nav li.text{
+  font-weight: 100;
+  line-height:45px;
+  margin-right: 5px;
+}
+
+.top-bar-section ul {
+  margin-right: 10px;
+}
+
+.top-bar .name h1 a {
+  margin-left: 10px
+}
+
+/*nav a:hover {
   text-decoration: none;
   color: yellow;
+}*/
 
+nav .fa{
+  line-height: 45px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.container {
+  margin-left: 25px;
+  margin-right: 25px;
 }

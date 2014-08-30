@@ -53,19 +53,50 @@ Product.create(name: "Unicorn Meat",
 			category_id: food.id)
 
 
-meds = Category.new(name: "Mediocre Medical")
-future = Category.new(name: "Futuristic Features")
+meds = Category.create(name: "Mediocre Medical")
 
-category = Category.create(name: 'Snippets')
+Product.create(name: "Band-Aids",
+		description: "Heal a boo boo.",
+		price: 3,
+		image_url: "band_aid.jpeg",
+		category_id: meds.id)
 
-Product.create( name: 'Meatball Skateboard',
-                      price: 2,
-                      description: 'Greate way to get around town while staying off the hangry train',
-                      category_id: category.id)
+Product.create(name: "Clinical Strength Deoderant",
+		description: "Feel comfortable exerting energy.",
+		price: 14,
+		image_url: "deoderant.jpeg",
+		category_id: meds.id)
 
-Product.create( name: 'Canaries in Cantaloupes',
-                      price: 3.8,
-                      image_url: "http://cdn0.lostateminor.com/wp-content/uploads/2012/01/funny-fake-products2.jpg",
-                      description: 'Great way to get around town while staying off the hangry train',
-                      category_id: category.id)
+Product.create(name: "Foot Massage Machine",
+		description: "Now you don't have to ask your wife.",
+		price: 8,
+		image_url: "foot_massage.jpeg",
+		category_id: meds.id)
+
+Product.create(name: "Pills",
+		description: "A random assortment for a fun surprise",
+		price: 30,
+		image_url: "pill.jpeg",
+		category_id: meds.id)
+
+Product.create(name: "Vegetables",
+		description: "You are what you eat.",
+		price: 30,
+		image_url: "vegetables.jpeg",
+		category_id: meds.id)
+
+# future = Category.new(name: "Futuristic Features")
+
+# category = Category.create(name: 'Snippets')
+
+# Product.create( name: 'Meatball Skateboard',
+#                       price: 2,
+#                       description: 'Greate way to get around town while staying off the hangry train',
+#                       category_id: category.id)
+
+# Product.create( name: 'Canaries in Cantaloupes',
+#                       price: 3.8,
+#                       image_url: "http://cdn0.lostateminor.com/wp-content/uploads/2012/01/funny-fake-products2.jpg",
+#                       description: 'Great way to get around town while staying off the hangry train',
+#                       category_id: category.id)
 

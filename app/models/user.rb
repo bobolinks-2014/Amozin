@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   # attr_accessible :email, :password, :password_confirmation
 
   has_many :reviews
+  has_one :cart
   has_secure_password
   validates :password, :length => { :minimum => 6 }
   validates :email, uniqueness: true, :format => /.+@.+\..+/

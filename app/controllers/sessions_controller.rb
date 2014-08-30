@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     @user = User.find_by_email(params[:email])
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
+      session[:cart_id] = @user.cart.id
       redirect_to categories_url, :notice => "Logged in!"
     else
 

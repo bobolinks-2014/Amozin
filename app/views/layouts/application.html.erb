@@ -32,7 +32,11 @@
 
 
             <div class="cart_count">
-              <%= current_cart.item_to_buys.count %>
+              <% if current_cart.item_to_buys.count == 0%>
+                <% nil %>
+              <% else %>
+                <%= current_cart.item_to_buys.count %>
+              <% end %>
             </div>
 
       <% else %>

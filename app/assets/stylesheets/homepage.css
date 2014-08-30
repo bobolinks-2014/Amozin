@@ -15,3 +15,15 @@
 .orbit-bullets{
   margin-bottom: 5%;
 }
+
+.mini_cart{
+  position: relative;
+}
+.cart_count {
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 160px;
+}
+
+

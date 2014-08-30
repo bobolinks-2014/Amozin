@@ -22,11 +22,19 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
 
-    <ul class="right">
+    <ul class="right mini_cart">
       <% if current_user.present? %>
           <li><%= link_to current_user.username, edit_user_path(current_user), class: "button"%></li>
           <li><%= link_to 'logout', logout_path, class: "button" %></li>
+
+
           <%= link_to '', cart_path(current_cart), class: "fa fa-shopping-cart fa-2x" %>
+
+
+            <div class="cart_count">
+              <%= current_cart.item_to_buys.count %>
+            </div>
+
       <% else %>
         <%= form_tag sessions_path do %>
           <li class='text'> Email </li>

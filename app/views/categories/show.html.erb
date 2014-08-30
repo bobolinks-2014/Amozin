@@ -2,15 +2,18 @@
 
 <h3> <%= @category.name %> </h3>
 
-<ul class="clearing-thumbs small-block-grid-4" data-clearing>
+<ul>
   <% @category.products.each do |product| %>
-    <div class="item">
-      <li><a href="path/to/your/img"><img data-caption="caption here..." src="path/to/your/img-th"></a></li>
-
-
-    <li><img data-caption= <%= link_to product.name, category_product_path(@category, product) %> src= > </li>
-    </div>
+  <div class="item">
+    <div class="image"><%= link_to image_tag(product.image_url),  category_product_path(@category, product)%></div>
+    <p><%= product.name %></p>
+  </div>
   <% end %>
 </ul>
+
+
+<!--   <li><a href="path/to/your/img"><img data-caption="caption 2 here..." src="path/to/your/img-th"></a></li>
+  <li><a href="path/to/your/img"><img data-caption="caption 3 here..." src="path/to/your/img-th"></a></li> -->
+
 
 </div>

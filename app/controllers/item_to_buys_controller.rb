@@ -8,7 +8,9 @@ class ItemToBuysController < ApplicationController
   end
 
   def update
-
+    item = ItemToBuy.find(params[:id])
+    item.update_attributes({quantity: params[:item_to_buy][:quantity]})
+    redirect_to cart_path(current_cart)
   end
 
 end

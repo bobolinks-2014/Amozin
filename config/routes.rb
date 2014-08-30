@@ -6,7 +6,7 @@ Amozin::Application.routes.draw do
       end
     end
   end
-
+  resources :categories
   root :to => "categories#index"
   resources :item_to_buys
   get "logout" => "sessions#destroy", :as => "logout"

@@ -14,14 +14,14 @@
   <% end %>
   </ul>
 
-  <% if current_cart.item_to_buys.count > 0 %>
+  <% if current_user && current_cart.item_to_buys.count > 0 %>
     Total : $<%= current_cart.total_price %>
     <%= form_tag(current_cart, method: "delete") do %>
       <%= submit_tag "Clear All Items" %>
     <% end %>
     <%= button_to "Buy", carts_path, :class=>"button" %>
   <% else %>
-      <h1>Shopping Cart is Empty, Go Shop =)</h1>
+      <h1>Shopping Cart is Empty, Go Shop 3=)</h1>
   <% end %>
 
 

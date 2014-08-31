@@ -15,8 +15,10 @@
   <% end %>
 
 <% if @product.quantity > 0 %>
-
-  <%= button_to "Add to Cart", item_to_buys_path(:product_id => @product.id),:class=>"button" %>
+  <p>Product quantity:  <strong><%= @product.quantity %></strong></p>
+  <% if current_user %>
+    <%= button_to "Add to Cart", item_to_buys_path(:product_id => @product.id),:class=>"button" %>
+  <% end %>
 <% else %>
   <h2>Sorry, product out of stock :( </h2>
 <% end %>

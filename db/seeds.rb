@@ -97,18 +97,32 @@ Product.create(name: "Vegetables",
 		quantity: 50,
 		category_id: meds.id)
 
-# future = Category.new(name: "Futuristic Features")
 
-# category = Category.create(name: 'Snippets')
+##### Ravi finish this
+toys = Category.create(name: 'Tinker Toys')
+	Product.create(name: "Vegetables",
+		description: "You are what you eat.",
+		price: 30,
+		image_url: "vegetables.jpeg",
+		quantity: 50,
+		category_id: toys.id)
 
-# Product.create( name: 'Meatball Skateboard',
-#                       price: 2,
-#                       description: 'Greate way to get around town while staying off the hangry train',
-#                       category_id: category.id)
 
-# Product.create( name: 'Canaries in Cantaloupes',
-#                       price: 3.8,
-#                       image_url: "http://cdn0.lostateminor.com/wp-content/uploads/2012/01/funny-fake-products2.jpg",
-#                       description: 'Great way to get around town while staying off the hangry train',
-#                       category_id: category.id)
+trans = Category.create(name: 'Verocious Vehicles')
+	Product.create(name: "Vegetables",
+		description: "You are what you eat.",
+		price: 30,
+		image_url: "vegetables.jpeg",
+		quantity: 50,
+		category_id: trans.id)
+
+clothes = Category.create(name: 'Colorful Clothes')
+
+Product.create(name: "Vegetables",
+		description: "You are what you eat.",
+		price: 30,
+		image_url: "vegetables.jpeg",
+		quantity: 50,
+		category_id: clothes.id)
+
 

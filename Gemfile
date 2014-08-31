@@ -33,6 +33,8 @@ gem 'simplecov', :require => false, :group => :test
 
 gem 'foundation-rails'
 gem 'slick_rails'
+gem 'owlcarousel-rails'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

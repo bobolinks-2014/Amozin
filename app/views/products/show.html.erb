@@ -36,9 +36,9 @@
 </ul>
 
 
-  <ul>
+  <ul class="list-style">
     <% @product.reviews.each do |review| %>
-      <li><%= review.rating %></li>
+      <li><i class="fa fa-star"><%= review.rating %></i></li>
       <li><%= review.content %></li>
     <% end %>
   </ul>

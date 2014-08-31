@@ -14,9 +14,14 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require owl.carousel
 //= require_tree .
 
 
-$(function(){ $(document).foundation({tab: {toggleable: false}});
+$(function(){ $(document).foundation(); });
+
+$(document).ready(function() {
+
+  $(".owl-carousel").owlCarousel();
 
 });

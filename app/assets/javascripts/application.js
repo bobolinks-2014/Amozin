@@ -29,18 +29,13 @@ $(document).ready(function() {
       type: "POST",
       dataType: "json",
       data: data,
-      url: url,
-      success: function(new_data){
-        console.log(new_data)
-        $(".reviews").prepend(
-          "<ul><li>"
-          + new_data.rating
-          + "</li>"
-          +"<li>"
-          + new_data.content
-          +"</li></ul>"
-          )
-      }
+      url: url}).done(function(new_data){
+        console.log(new_data.rating)
+        $("#stars").html("Product Rating: "+new_data.average)
+        var str = "<i class='fa fa-star'></i>" * new_data.rating;
+        $(".reviews .list-style").prepend(
+          "<li>" + str + "</li>"+"<li>"+ new_data.content+"</li>"
+          );
      })
   })
 });

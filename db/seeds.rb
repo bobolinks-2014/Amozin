@@ -99,30 +99,30 @@ Product.create(name: "Vegetables",
 
 
 ##### Ravi finish this
-toys = Category.create(name: 'Tinker Toys')
-	Product.create(name: "Vegetables",
-		description: "You are what you eat.",
-		price: 30,
-		image_url: "vegetables.jpeg",
-		quantity: 50,
-		category_id: toys.id)
+# toys = Category.create(name: 'Tinker Toys')
+# 	Product.create(name: "Vegetables",
+# 		description: "You are what you eat.",
+# 		price: 30,
+# 		image_url: "vegetables.jpeg",
+# 		quantity: 50,
+# 		category_id: toys.id)
 
 
-trans = Category.create(name: 'Verocious Vehicles')
-	Product.create(name: "Vegetables",
-		description: "You are what you eat.",
-		price: 30,
-		image_url: "vegetables.jpeg",
-		quantity: 50,
-		category_id: trans.id)
+# trans = Category.create(name: 'Verocious Vehicles')
+# 	Product.create(name: "Vegetables",
+# 		description: "You are what you eat.",
+# 		price: 30,
+# 		image_url: "vegetables.jpeg",
+# 		quantity: 50,
+# 		category_id: trans.id)
 
-clothes = Category.create(name: 'Colorful Clothes')
+# clothes = Category.create(name: 'Colorful Clothes')
 
-Product.create(name: "Vegetables",
-		description: "You are what you eat.",
-		price: 30,
-		image_url: "vegetables.jpeg",
-		quantity: 50,
-		category_id: clothes.id)
+# Product.create(name: "Vegetables",
+# 		description: "You are what you eat.",
+# 		price: 30,
+# 		image_url: "vegetables.jpeg",
+# 		quantity: 50,
+# 		category_id: clothes.id)
 
 

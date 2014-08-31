@@ -16,15 +16,15 @@
   <h2>Sorry, product out of stock :( </h2>
 <% end %>
 
-<p>Product Rating: <%= @product.name %></p>
+<p>Product Rating:
     <% @product.average_review.times do %>
       <i class="fa fa-star"></i>
-    <% end %>
+    <% end %></p>
 
 
 
 
-  <h1> Review for <%= @product.name %> <h1>
+  <h4> Review for <%= @product.name %> <h4>
 
   <%= form_for @review, url: category_product_reviews_path(@category, @product) do |f| %>
     <%= f.label :rating %>
@@ -44,11 +44,12 @@
   </ul>
 
 </div>
-    <div class="similar_products">
-      <h2>Similar Products</h2>
-  <% @product.show_all_other_products.each do |product| %>
-    <li><%= product.name %><%= image_tag (product.image_url) %></li>
+  <h2>Similar Products</h2>
+<div>
+    <% @product.show_all_other_products.each do |product| %>
+      <div class="similar_products" >
+        <%= product.name %><br><%= link_to image_tag(product.image_url), category_product_path(Category.find(product.category_id), product) %>
 
-
-  <% end %>
-    </div>
+      </div>
+    <% end %>
+</div>

@@ -13,6 +13,9 @@ class CartsController < ApplicationController
 
   def create
     cart = current_cart
+    current_cart.item_to_buys.each do |item|
+    item.product.quantity = item.product.quantity - item.quantity
+    end
     cart.item_to_buys.destroy_all
     flash[:notice] = "Congratulations, Your Purchase Was Completed, too bad this is a fake website!"
     redirect_to cart_path(current_cart)

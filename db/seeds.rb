@@ -13,6 +13,7 @@ Product.create(name: "Squeeze Bacon",
 			description: "The bacon you can squeeze comes in a ketchup-style bottle from which you can squeeze out strips of delicious bacon onto any meal.",
 			price: 8,
 			image_url: "bacon.jpeg",
+			quantity: 50,
 			category_id: food.id)
 
 Product.create(name: "Cheesy Poofs",
@@ -20,36 +21,42 @@ Product.create(name: "Cheesy Poofs",
 				(as a matter of fact, my sister used this term a lot before southpark was launched.)",
 			price: 3.50,
 			image_url:"cheesy_poofs.jpeg",
+			quantity: 50,
 			category_id: food.id)
 
 Product.create(name:"Duff Beer",
 			description:"stereotypical commercial beer: cheap, poor-quality, and advertised everywhere.",
 			price: 5,
 			image_url:"duff.jpeg",
+			quantity: 50,
 			category_id: food.id)
 
 Product.create(name:"Nuts and Gum",
 			description:"Together at last!",
 			price: 2,
 			image_url:"gum.jpeg",
+			quantity: 50,
 			category_id: food.id)
 
 Product.create(name: "Krabby Patty",
 			description:"A Krabby Patty is a burger sold at the Krusty Krab. It is the best-known food at the Krusty Krab, and the most famous sandwich in Bikini Bottom.",
 			price: 6,
 			image_url:"krabby.jpeg",
+			quantity: 50,
 			category_id: food.id)
 
 Product.create(name: "Stay Puft",
 			description: "Formerly famous. Now legendary. Also, I am a marshmallow.",
 			price: 4,
 			image_url:"puffs.jpeg",
+			quantity: 50,
 			category_id: food.id)
 
 Product.create(name: "Unicorn Meat",
 			description:"Unicorns, as we all know, frolic all over the world, pooping rainbows and marshmallows wherever they go. We are confident you will find a world of bewilderment in every mouthful of scrumptious unicorn meat.",
 			price: 100,
 			image_url:"unicorn.jpeg",
+			quantity: 50,
 			category_id: food.id)
 
 
@@ -59,30 +66,35 @@ Product.create(name: "Band-Aids",
 		description: "Heal a boo boo.",
 		price: 3,
 		image_url: "band_aid.jpeg",
+		quantity: 50,
 		category_id: meds.id)
 
 Product.create(name: "Clinical Strength Deoderant",
 		description: "Feel comfortable exerting energy.",
 		price: 14,
 		image_url: "deoderant.jpeg",
+		quantity: 50,
 		category_id: meds.id)
 
 Product.create(name: "Foot Massage Machine",
 		description: "Now you don't have to ask your wife.",
 		price: 8,
 		image_url: "foot_massage.jpeg",
+		quantity: 50,
 		category_id: meds.id)
 
 Product.create(name: "Pills",
 		description: "A random assortment for a fun surprise",
 		price: 30,
 		image_url: "pill.jpeg",
+		quantity: 50,
 		category_id: meds.id)
 
 Product.create(name: "Vegetables",
 		description: "You are what you eat.",
 		price: 30,
 		image_url: "vegetables.jpeg",
+		quantity: 50,
 		category_id: meds.id)
 
 # future = Category.new(name: "Futuristic Features")

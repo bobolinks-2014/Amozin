@@ -6,3 +6,16 @@
   float: left;
 }
 
+.home-slider{
+  display: inline;
+}
+
+.list-style{
+  list-style-type: none;
+}
+
+.similar_products{
+list-style-type: none;
+display: inline;
+}
+

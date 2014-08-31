@@ -69,16 +69,18 @@
 <%= session[:cart_id] %>
 <p>Number of products in the cart</p>
 <%= current_cart.item_to_buys.count %>
+<p>flash messages</p>
+<%= flash[:notice] %>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation/foundation.js"></script>
 <script src="js/foundation/foundation.orbit.js"></script>
   <body>
-    <ul class = "errors right">
+    <div class = "errors right">
         <% if flash[:error] || flash[:notice] %>
           <%= flash[:error] || flash[:notice] %>
         <% end %>
-      </ul>
+      </div>
     <div class="container"%>
 
       <%= yield %>

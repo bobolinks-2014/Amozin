@@ -90,4 +90,14 @@ nav .fa{
   margin-right: 25px;
 }
 
+.footer{
+  background-color: black;
+  height: 75px;
+  margin: 0px;
+  width: 100%;
+}
 
+.buy_image{
+  height: 75px;
+  width: 75px;
+}

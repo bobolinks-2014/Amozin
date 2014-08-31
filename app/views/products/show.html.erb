@@ -46,10 +46,12 @@
 </div>
   <h2>Similar Products</h2>
 <div>
+      <div id="owl-example" class="owl-carousel">
     <% @product.show_all_other_products.each do |product| %>
-      <div class="similar_products" >
-        <%= product.name %><br><%= link_to image_tag(product.image_url), category_product_path(Category.find(product.category_id), product) %>
-
+      <div class="product-image">
+        <%= product.name %><br>
+        <%= link_to image_tag(product.image_url), category_product_path(Category.find(product.category_id), product) %>
       </div>
     <% end %>
+      </div>
 </div>

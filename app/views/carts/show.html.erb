@@ -4,23 +4,24 @@
   <ul>
   <% current_cart.item_to_buys.each do |item| %>
     <%= form_for item do |f| %>
-      <%= item.product.name %>
+      <%= item.product.name %><br>
+      <div class="buy_image"><%= image_tag item.product.image_url %></div>
       <p>Price : $ <%= item.product.price %></p>
       <%= f.number_field(:quantity, in: 1..100) %>
-      <%= f.submit %>
+      <%= f.submit class: "button"%>
     <% end %>
     <%= form_tag(item, method: "delete") do %>
-      <%= submit_tag "Delete" %>
+      <%= submit_tag "Delete",class: "button alert tiny" %>
     <% end %>
   <% end %>
   </ul>
 
   <% if current_cart.item_to_buys.count > 0 %>
-    Total : $<%= current_cart.total_price %>
+    <strong>Total :</strong> $<%= current_cart.total_price %>
     <%= form_tag(current_cart, method: "delete") do %>
-      <%= submit_tag "Clear All Items" %>
+      <%= submit_tag "Clear All Items", class: "button alert tiny" %>
     <% end %>
-    <%= button_to "Buy", carts_path, :class=>"button" %>
+    <%= button_to "Buy", carts_path, :class=> "button" %>
   <% else %>
       <h1>Shopping Cart is Empty, Go Shop =)</h1>
   <% end %>

@@ -38,4 +38,15 @@ h3{
   padding-right: 400px;
   padding-top: 30px;
 }
+.product-image{
+  height: 200px;
+  width: 200px;
+}
+
+.button_alert{
+  height: 50px;
+  width:75px;
+}
+
+
 

@@ -14,4 +14,14 @@ class Product < ActiveRecord::Base
     Product.where(category_id: self.category_id).to_a.delete_if{|product| product.id == self.id}
   end
 
+  def average_review
+    if self.reviews.pluck("rating").size > 0
+      rating_array = self.reviews.pluck("rating")
+      (rating_array.reduce{ |sum, n| sum.to_i + n.to_i }.to_i)/ rating_array.size
+    else
+      0
+    end
+  end
+
 end
+

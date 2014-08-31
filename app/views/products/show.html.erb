@@ -20,7 +20,7 @@
     <%= button_to "Add to Cart", item_to_buys_path(:product_id => @product.id),:class=>"button" %>
   <% end %>
 <% else %>
-  <h2>Sorry, product out of stock :( </h2>
+  <h2>Sorry, product out of stock  :( </h2>
 <% end %>
 
 <p>Product Rating: <%= @product.name %></p>

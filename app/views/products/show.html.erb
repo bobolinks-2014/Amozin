@@ -35,14 +35,14 @@
   <% end %>
 </ul>
 
-
+<div class="reviews">
   <ul>
     <% @product.reviews.each do |review| %>
       <li><%= review.rating %></li>
       <li><%= review.content %></li>
     <% end %>
   </ul>
-
+</div>
 </div>
     <div class="similar_products">
       <h2>Similar Products</h2>

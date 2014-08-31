@@ -18,3 +18,37 @@
 
 
 $(function(){ $(document).foundation(); });
+$(document).ready(function() {
+  $("#new_review").submit(function(event){
+     event.preventDefault();
+     var data = $(this).serialize()
+     var url = $(this).attr("action");
+     $.ajax({
+      type: "POST",
+      dataType: "json",
+      data: data,
+      url: url,
+      success: function(new_data){
+        console.log(new_data)
+        $(".reviews").prepend(
+          "<ul><li>"
+          + new_data.rating
+          + "</li>"
+          +"<li>"
+          + new_data.content
+          +"</li></ul>"
+          )
+      }
+
+
+     })
+
+
+
+
+  })
+
+
+
+
+});

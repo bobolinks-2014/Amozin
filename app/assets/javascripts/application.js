@@ -14,11 +14,13 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require owl.carousel
 //= require_tree .
 
 
 $(function(){ $(document).foundation(); });
 $(document).ready(function() {
+   $(".owl-carousel").owlCarousel();
   $("#new_review").submit(function(event){
      event.preventDefault();
      var data = $(this).serialize()
@@ -39,16 +41,6 @@ $(document).ready(function() {
           +"</li></ul>"
           )
       }
-
-
      })
-
-
-
-
   })
-
-
-
-
 });

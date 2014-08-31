@@ -1,10 +1,14 @@
-<h1><%= @product.name %></h1>
+<div class="product_home">
+
+<div class="product_image"> <%= image_tag (@product.image_url)%> </div>
+
+<h3><%= @product.name %></h3>
 
 <ul>
     <li><%= @product.price %></li>
     <li><%= @product.description %></li>
     <li><%= @product.category.name %></li>
-    <li><%= image_tag (@product.image_url)%></li>
+    <li></li>
   <% @product.show_all_other_products.each do |product| %>
     <li><%= product.name %></li>
 
@@ -26,3 +30,5 @@
   <%= f.submit %>
   <% end %>
 </ul>
+
+</div>

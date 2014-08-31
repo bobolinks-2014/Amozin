@@ -12,11 +12,16 @@
       <%= submit_tag "Delete" %>
     <% end %>
   <% end %>
-  Total : $<%= current_cart.total_price %>
   </ul>
- <%= form_tag(current_cart, method: "delete") do %>
-    <%= submit_tag "Clear All Items" %>
+
+  <% if current_cart.item_to_buys.count > 0 %>
+    Total : $<%= current_cart.total_price %>
+    <%= form_tag(current_cart, method: "delete") do %>
+      <%= submit_tag "Clear All Items" %>
+    <% end %>
+    <%= button_to "Buy", carts_path, :class=>"button" %>
+  <% else %>
+      <h1>Shopping Cart is Empty, Go Shop =)</h1>
   <% end %>
 
-<%= button_to "Buy", carts_path, :class=>"button" %>
 

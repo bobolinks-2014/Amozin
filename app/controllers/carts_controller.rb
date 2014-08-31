@@ -16,7 +16,6 @@ class CartsController < ApplicationController
     current_cart.item_to_buys.each do |item|
     item.product.quantity = item.product.quantity - item.quantity
     item.product.save
-     # sdfsd
     end
 
     cart.item_to_buys.destroy_all

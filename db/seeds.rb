@@ -62,21 +62,21 @@ Product.create(name: "Unicorn Meat",
 
 meds = Category.create(name: "Mediocre Medical")
 
-Product.create(name: "Band-Aids",
+product1 = Product.create(name: "Band-Aids",
 		description: "Heal a boo boo.",
 		price: 3,
 		image_url: "band_aid.jpeg",
 		quantity: 50,
 		category_id: meds.id)
 
-Product.create(name: "Clinical Strength Deoderant",
+product2 = Product.create(name: "Clinical Strength Deoderant",
 		description: "Feel comfortable exerting energy.",
 		price: 14,
 		image_url: "deoderant.jpeg",
 		quantity: 50,
 		category_id: meds.id)
 
-Product.create(name: "Foot Massage Machine",
+product3 = Product.create(name: "Foot Massage Machine",
 		description: "Now you don't have to ask your wife.",
 		price: 8,
 		image_url: "foot_massage.jpeg",
@@ -97,7 +97,19 @@ Product.create(name: "Vegetables",
 		quantity: 50,
 		category_id: meds.id)
 
+user1 = User.create()
+user2 = User.create()
 
+cart1 = Cart.create(user: user1)
+cart2 = Cart.create(user: user2)
+cart3 = Cart.create()
+
+cart1.add_product(product1.id)
+cart1.add_product(product2.id)
+
+cart2.add_product(product1.id)
+
+cart3.add_product(product3.id)
 ##### Ravi finish this
 # toys = Category.create(name: 'Tinker Toys')
 # 	Product.create(name: "Vegetables",

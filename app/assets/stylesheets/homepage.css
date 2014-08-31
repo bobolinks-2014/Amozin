@@ -1,0 +1,29 @@
+.homepage h3{
+  text-align: center;
+}
+
+.slideshow-wrapper{
+  text-align: center
+}
+.homepage img{
+  margin: 0 auto;
+  width: 15%;
+  vertical-align: middle;
+
+}
+
+.orbit-bullets{
+  margin-bottom: 5%;
+}
+
+.mini_cart{
+  position: relative;
+}
+.cart_count {
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 160px;
+}
+
+

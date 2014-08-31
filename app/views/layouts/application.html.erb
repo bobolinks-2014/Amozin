@@ -13,7 +13,7 @@
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-      <h1><%= link_to 'Amozin!', root_path %></h1>
+      <h1><%= link_to 'AMOZIN', root_path %></h1>
     </li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -22,27 +22,44 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
 
-    <ul class="right">
-      <% if flash[:error] || flash[:notice] %>
-        <h1><%= flash[:error] || flash[:notice] %></h1>
-      <% end %>
+    <ul class="right mini_cart">
       <% if current_user.present? %>
-          <%= link_to current_user.username, edit_user_path(current_user) %>
-        | <%= link_to 'logout', logout_path, class: "button" %>
+          <li><%= link_to current_user.username, edit_user_path(current_user), class: "button"%></li>
+          <li><%= link_to 'logout', logout_path, class: "button" %></li>
+
+
+          <%= link_to '', cart_path(current_cart), class: "fa fa-shopping-cart fa-2x" %>
+
+
+            <div class="cart_count">
+              <% if current_cart.item_to_buys.count == 0%>
+                <% nil %>
+              <% else %>
+                <%= current_cart.item_to_buys.count %>
+              <% end %>
+            </div>
+
       <% else %>
         <%= form_tag sessions_path do %>
-          <li>Email: </li><li><%= text_field_tag :email, params[:email] %></li>
-          <li>Password: </li><li><%= password_field_tag :password %></li>
+          <li class='text'> Email </li>
+          <li><%= text_field_tag :email, params[:email] %></li>
+          <li class ='text'> Password </li>
+          <li><%= password_field_tag :password %></li>
           <li><%= submit_tag "Log in", class: "button" %></li>
-          <li><%= link_to 'SignUp', new_user_path %></li>
+          <li><%= link_to 'Sign up', new_user_path, class: "button" %></li>
         <% end %>
+
       <% end %>
     </ul>
+
 
     <!-- Left Nav Section -->
 
   </section>
 </nav>
+
+
+
 <h3>Params</h3>
 <%= params.inspect %>
 <h3>Sessions</h3>
@@ -52,12 +69,20 @@
 <%= session[:cart_id] %>
 <p>Number of products in the cart</p>
 <%= current_cart.item_to_buys.count %>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation/foundation.js"></script>
 <script src="js/foundation/foundation.orbit.js"></script>
   <body>
+    <ul class = "errors right">
+        <% if flash[:error] || flash[:notice] %>
+          <%= flash[:error] || flash[:notice] %>
+        <% end %>
+      </ul>
+    <div class="container"%>
 
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
+      <%= yield %>
+      <%= javascript_include_tag "application" %>
+    </div>
   </body>
 </html>

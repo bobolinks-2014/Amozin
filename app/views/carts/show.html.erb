@@ -2,8 +2,26 @@
 
   <ul>
   <% current_cart.item_to_buys.each do |item| %>
-    <li><%= item.product.name %> <%= item.quantity %></li>
-
+    <%= form_for item do |f| %>
+      <%= item.product.name %>
+      <p>Price : $ <%= item.product.price %></p>
+      <%= f.number_field(:quantity, in: 1..100) %>
+      <%= f.submit %>
     <% end %>
+    <%= form_tag(item, method: "delete") do %>
+      <%= submit_tag "Delete" %>
+    <% end %>
+  <% end %>
   </ul>
+
+  <% if current_cart.item_to_buys.count > 0 %>
+    Total : $<%= current_cart.total_price %>
+    <%= form_tag(current_cart, method: "delete") do %>
+      <%= submit_tag "Clear All Items" %>
+    <% end %>
+    <%= button_to "Buy", carts_path, :class=>"button" %>
+  <% else %>
+      <h1>Shopping Cart is Empty, Go Shop =)</h1>
+  <% end %>
+
 

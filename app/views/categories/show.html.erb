@@ -1,9 +1,22 @@
-<h1> <%= @category.name %> </h1>
+<div class="category_home">
 
-</div>
+<h3> <%= @category.name %> </h3>
+
 <ul>
   <% @category.products.each do |product| %>
-    <li> <%= link_to product.name, category_product_path(@category, product) %></li>
+  <div class="item">
+    <div class="image"><%= link_to image_tag(product.image_url),  category_product_path(@category, product)%></div>
+    <p><%= product.name %></p>
+    <% product.average_review.times do %>
+      <i class="fa fa-star"></i>
+    <% end %>
+  </div>
   <% end %>
 </ul>
+
+
+<!--   <li><a href="path/to/your/img"><img data-caption="caption 2 here..." src="path/to/your/img-th"></a></li>
+  <li><a href="path/to/your/img"><img data-caption="caption 3 here..." src="path/to/your/img-th"></a></li> -->
+
+
 </div>

@@ -1,20 +1,33 @@
-<h1><%= @product.name %></h1>
+<div class="product_home">
+
+<div class="product_image"> <%= image_tag (@product.image_url)%> </div>
+
+<h3><%= @product.name %></h3>
 
 <ul>
     <li><%= @product.price %></li>
     <li><%= @product.description %></li>
     <li><%= @product.category.name %></li>
-    <li><%= image_tag (@product.image_url)%></li>
+    <li></li>
   <% @product.show_all_other_products.each do |product| %>
     <li><%= product.name %></li>
 
   <% end %>
-<a href="#" class="button">Buy</a>
-<%= button_to "Add to Cart", item_to_buys_path(:product_id => @product.id) %>
-  <% @product.reviews.each do |review| %>
-    <li><%= review.rating %></li>
-    <li><%= review.content %></li>
-  <% end %>
+
+<% if @product.quantity > 0 %>
+
+  <%= button_to "Add to Cart", item_to_buys_path(:product_id => @product.id),:class=>"button" %>
+<% else %>
+  <h2>Sorry, product out of stock :( </h2>
+<% end %>
+
+<p>Product Rating: <%= @product.name %></p>
+    <% @product.average_review.times do %>
+      <i class="fa fa-star"></i>
+    <% end %>
+
+
+
 
   <h1> Review for <%= @product.name %> <h1>
 
@@ -26,3 +39,13 @@
   <%= f.submit %>
   <% end %>
 </ul>
+
+
+  <ul>
+    <% @product.reviews.each do |review| %>
+      <li><%= review.rating %></li>
+      <li><%= review.content %></li>
+    <% end %>
+  </ul>
+
+</div>

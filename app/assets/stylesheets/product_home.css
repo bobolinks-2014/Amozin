@@ -4,6 +4,10 @@
 
 .product_home .product_image{
   float: left;
+  height: 300px;
+  width: 500px;
+  padding-top: 60px;
+  padding-left: 60px;
 }
 
 .home-slider{
@@ -14,8 +18,35 @@
   list-style-type: none;
 }
 
+.list-style li{
+  padding-bottom: 20px;
+  font: 20px;
+}
+
 .similar_products{
 list-style-type: none;
-display: inline;
+float: left;
 }
+
+.similar_products img {
+
+  padding-right: 10px;
+}
+
+h3{
+  font-size: 60px;
+  padding-right: 400px;
+  padding-top: 30px;
+}
+.product-image{
+  height: 200px;
+  width: 200px;
+}
+
+.button_alert{
+  height: 50px;
+  width:75px;
+}
+
+
 

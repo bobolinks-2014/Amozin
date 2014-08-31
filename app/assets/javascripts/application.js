@@ -14,7 +14,28 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require owl.carousel
 //= require_tree .
 
 
 $(function(){ $(document).foundation(); });
+$(document).ready(function() {
+   $(".owl-carousel").owlCarousel();
+  $("#new_review").submit(function(event){
+     event.preventDefault();
+     var data = $(this).serialize()
+     var url = $(this).attr("action");
+     $.ajax({
+      type: "POST",
+      dataType: "json",
+      data: data,
+      url: url}).done(function(new_data){
+        console.log(new_data.rating)
+        $("#stars").html("Product Rating: "+new_data.average)
+        var str = "<i class='fa fa-star'></i>" * new_data.rating;
+        $(".reviews .list-style").prepend(
+          "<li>" + str + "</li>"+"<li>"+ new_data.content+"</li>"
+          );
+     })
+  })
+});

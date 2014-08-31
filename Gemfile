@@ -20,7 +20,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
+gem 'pry'
+gem 'pry-nav'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -33,6 +34,8 @@ gem 'simplecov', :require => false, :group => :test
 
 gem 'foundation-rails'
 gem 'slick_rails'
+gem 'owlcarousel-rails'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

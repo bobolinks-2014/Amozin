@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
     <%= stylesheet_link_tag    "application" %>
@@ -87,5 +88,14 @@
       <%= yield %>
       <%= javascript_include_tag "application" %>
     </div>
+    <nav class="bottom-bar" data-bootombar>
+  <hr>
+  <div class="footer">
+    <h4>&copy AMOZIN 2014</h4>
+
+  </div>
+</nav>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="assets/owl-carousel/owl.carousel.js"></script>
   </body>
 </html>

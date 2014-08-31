@@ -97,6 +97,13 @@ Product.create(name: "Vegetables",
 		quantity: 50,
 		category_id: meds.id)
 
+Product.create(name: "Kleenex",
+		description: "Never have to look for it again",
+		price: 30,
+		image_url: "kleenex_head.jpeg",
+		quantity: 50,
+		category_id: meds.id)
+
 user1 = User.create()
 user2 = User.create()
 
@@ -122,7 +129,7 @@ trans = Category.create(name: 'Verocious Vehicles')
 	Product.create(name: "Couch Racer",
 		description: "They won't catch you ridin dirty with this.",
 		price: 2000,
-		image_url: "couch_car.jpg",
+		image_url: "couch_car.jpeg",
 		quantity: 50,
 		category_id: trans.id)
 
@@ -143,7 +150,7 @@ trans = Category.create(name: 'Verocious Vehicles')
 		Product.create(name: "Hoverboard",
 		description: "Ride anywhere you want, in air",
 		price: 1000,
-		image_url: "hoverboard.jpg",
+		image_url: "hoverboard.jpeg",
 		quantity: 50,
 		category_id: trans.id)
 
@@ -216,20 +223,6 @@ Product.create(name: "Stockings for Anyone",
 		description: "For when you like that hairy look.",
 		price: 20,
 		image_url: "leg_stockings.jpg",
-		quantity: 50,
-		category_id: clothes.id)
-
-Product.create(name: "Pajama Suit",
-		description: "Look fly, even when you sleep.",
-		price: 80,
-		image_url: "suit_pajamas.jpg",
-		quantity: 50,
-		category_id: clothes.id)
-
-Product.create(name: "Poodle Pants",
-		description: "For people who love their jeans.",
-		price: 40,
-		image_url: "poodle_pants.jpg",
 		quantity: 50,
 		category_id: clothes.id)
 

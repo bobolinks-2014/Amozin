@@ -10,12 +10,12 @@ feature 'User browsing the website' do
 
     it 'sees a login link' do
       visit categories_path
-      expect(page).to have_content "Log in"
+      expect(page).to have_button "Log in"
     end
 
     it 'sees a SignUp link' do
       visit categories_path
-      expect(page).to have_content "SignUp"
+      expect(page).to have_content "Sign up"
     end
 
     it 'can login' do
@@ -23,6 +23,7 @@ feature 'User browsing the website' do
                           email: "Rob@rob.com",
                           password: "robrob",
                           password_confirmation: "robrob")
+      Cart.create(user: @user)
       visit root_url
       fill_in 'email', with: @user.email
       fill_in 'password', with: @user.password

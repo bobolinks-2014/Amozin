@@ -59,6 +59,13 @@ Product.create(name: "Unicorn Meat",
 			quantity: 50,
 			category_id: food.id)
 
+Product.create(name: "Shards -o- Glass!",
+			description:"The treat that keeps you on your feet!",
+			price: 7,
+			image_url:"shards.jpeg",
+			quantity: 50,
+			category_id: food.id)
+
 
 meds = Category.create(name: "Mediocre Medical")
 
@@ -101,6 +108,20 @@ Product.create(name: "Kleenex",
 		description: "Never have to look for it again",
 		price: 30,
 		image_url: "kleenex_head.jpeg",
+		quantity: 50,
+		category_id: meds.id)
+
+Product.create(name: "Colon Blow",
+		description: "Keeping people regular since 1674",
+		price: 30,
+		image_url: "colon_blow.jpg",
+		quantity: 50,
+		category_id: meds.id)
+
+Product.create(name: "Womb, There It Is",
+		description: "You're never sure until you know'",
+		price: 40,
+		image_url: "parks-n-rec-womb.jpg",
 		quantity: 50,
 		category_id: meds.id)
 
@@ -233,5 +254,31 @@ Product.create(name: "Six Pack Shirt",
 		quantity: 50,
 		category_id: clothes.id)
 
+##### Ravi finish this
+toys = Category.create(name: 'Tinker Toys')
+	Product.create(name: "Don't Wizz on the Fence!",
+		description: "The classic game of teating you to aim!",
+		price: 30,
+		image_url: "wizz.jpeg",
+		quantity: 50,
+		category_id: toys.id)
+
+
+# trans = Category.create(name: 'Verocious Vehicles')
+# 	Product.create(name: "Vegetables",
+# 		description: "You are what you eat.",
+# 		price: 30,
+# 		image_url: "vegetables.jpeg",
+# 		quantity: 50,
+# 		category_id: trans.id)
+
+# clothes = Category.create(name: 'Colorful Clothes')
+
+# Product.create(name: "Vegetables",
+# 		description: "You are what you eat.",
+# 		price: 30,
+# 		image_url: "vegetables.jpeg",
+# 		quantity: 50,
+# 		category_id: clothes.id)
 
 

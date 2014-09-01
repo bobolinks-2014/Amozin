@@ -1,0 +1,25 @@
+.shopping_cart #item_to_buy_quantity{
+  width: 50px;
+  text-align: center;
+  margin-left: 75px;
+  margin: 20px auto;
+}
+
+.shopping_cart{
+  text-align: center;
+}
+
+
+
+
+.shopping_cart .items_to_buy{
+  display: inline-block;
+  width: 25%:;
+  margin: 5%;
+}
+
+
+.shopping_cart .continue{
+  margin-top: 2%;
+  text-align: right;
+}

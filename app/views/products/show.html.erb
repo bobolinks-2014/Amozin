@@ -2,6 +2,7 @@
 
 <div class="product_image"> <%= image_tag (@product.image_url)%> </div>
 
+<div class="product_info">
 <h3><strong><%= @product.name %></strong></h3>
 
 <ul class="list-style">
@@ -16,6 +17,9 @@
   <h2>Sorry, product out of stock  :( </h2>
 <% end %>
 
+</div>
+
+<div class="product_review"
 <p id="stars">Product Rating:
    <span> <% @product.average_review.times do %>
       <i class="fa fa-star"></i></span>
@@ -31,7 +35,8 @@
 <br/>
     <%= f.label :content %>
     <%= f.text_area :content %><br/>
-  <%= f.submit %>
+
+  <%= f.submit "Create Review",  :class=> "button" %>
   <% end %>
 </ul>
 
@@ -45,7 +50,9 @@
   </ul>
 </div>
 </div>
-  <h2>Similar Products</h2>
+
+</div>
+  <h4>Similar Products</h4>
 <div>
       <div id="owl-example" class="owl-carousel">
     <% @product.show_all_other_products.each do |product| %>

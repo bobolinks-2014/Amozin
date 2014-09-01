@@ -4,10 +4,12 @@
 
 .product_home .product_image{
   float: left;
-  height: 300px;
-  width: 500px;
   padding-top: 60px;
-  padding-left: 60px;
+  margin-right: 5%
+}
+
+.product_home{
+  padding-top: 60px;
 }
 
 .home-slider{
@@ -24,8 +26,8 @@
 }
 
 .similar_products{
-list-style-type: none;
-float: left;
+  list-style-type: none;
+  float: left;
 }
 
 .similar_products img {
@@ -33,14 +35,9 @@ float: left;
   padding-right: 10px;
 }
 
-h3{
-  font-size: 60px;
-  padding-right: 400px;
-  padding-top: 30px;
-}
-.product-image{
-  height: 200px;
-  width: 200px;
+.product_home h3{
+  text-align: left;
+  letter-spacing: 24px;
 }
 
 .button_alert{
@@ -48,5 +45,8 @@ h3{
   width:75px;
 }
 
+.product_home .product_review{
+  margin-top: 5%;
+}
 
 

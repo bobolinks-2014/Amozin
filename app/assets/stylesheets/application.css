@@ -15,7 +15,10 @@
  *= require owl.theme
  *= require_tree .
  */
-
+img{
+  height: 250px;
+  width: 250px;
+}
 #header{
   padding: 10px;
   width: 100%;
@@ -74,11 +77,6 @@ nav li.text{
   margin-left: 10px
 }
 
-/*nav a:hover {
-  text-decoration: none;
-  color: yellow;
-}*/
-
 nav .fa{
   line-height: 45px;
   margin-right: 10px;
@@ -92,19 +90,16 @@ nav .fa{
 
 .footer{
   background-color: black;
+  border: none;
   height: 75px;
   margin: 0px;
   width: 100%;
   text-align: center;
 }
 
-.buy_image{
-  height: 75px;
-  width: 75px;
-}
-
-.continue{
-  position: relative;
-  padding-left: 1350px;
-  padding-top: 50px;
+.cart_count {
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 160px;
 }

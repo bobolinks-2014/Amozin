@@ -1,18 +1,15 @@
 <div class="homepage">
 
-<h1>Featured Products</h1>
+<h4>Featured Products</h4>
 
-<ul data-orbit>
+<ul data-orbit class="featured">
   <% Product.featured_products.each do |product| %>
    <li><%= link_to image_tag(product.image_url), category_product_path(Category.find(product.category_id), product) %></li>
   <% end %>
 </ul>
 
   <% @categories.each do |category| %>
-   <h4>
-    <%= link_to category.name, category_path(category) %>
-  </h4>
-</div>
+   <h4><%= link_to category.name, category_path(category) %></h4>
       <div id="owl-example" class="owl-carousel">
         <% category.products.each do |product| %>
             <div class="product-image">
@@ -22,6 +19,6 @@
       </div>
 
   <% end %>
-
+</div>
 
 

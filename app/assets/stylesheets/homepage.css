@@ -1,36 +1,38 @@
-.homepage h3{
+.homepage h4{
   text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
 }
 
 .slideshow-wrapper{
   text-align: center
 }
+
 .homepage img{
   margin: 0 auto;
-  width: 15%;
   vertical-align: middle;
-
 }
 
 .orbit-bullets{
-  margin-bottom: 5%;
+  margin-bottom: 2%;
+}
+
+.featured img{
+  height: 200px;
+}
+
+.owl_wrapper{
+  margin-bottom: 1%
 }
 
 .mini_cart{
   position: relative;
 }
-.cart_count {
-  position: absolute;
-  color: white;
-  top: 10px;
-  left: 160px;
-}
 
-.homepage h1{
-  text-align: center;
+
+
+.homepage h4{
   color: grey;
-  padding-right: 30px;
-  padding-top: 60px;
 }
 
 

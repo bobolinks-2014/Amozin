@@ -59,22 +59,6 @@
   </section>
 </nav>
 
-
-
-<h3>Params</h3>
-<%= params.inspect %>
-<h3>Sessions</h3>
-<p>User</p>
-<%= session[:user_id] %>
-<p>Cart:</p>
-<%= session[:cart_id] %>
-<p>Number of products in the cart</p>
-<%= current_cart.item_to_buys.count %>
-<p>flash messages</p>
-<%= flash[:notice] %>
-
-<%= current_cart.item_to_buys.count %>
-
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <body>
@@ -88,13 +72,12 @@
       <%= yield %>
       <%= javascript_include_tag "application" %>
     </div>
-    <nav class="bottom-bar" data-bootombar>
-  <hr>
+
+
   <div class="footer">
     <h4>&copy AMOZIN 2014</h4>
-
   </div>
-</nav>
+
     <script src="jquery-1.9.1.min.js"></script>
     <script src="assets/owl-carousel/owl.carousel.js"></script>
   </body>

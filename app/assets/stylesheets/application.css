@@ -91,9 +91,11 @@ nav .fa{
 }
 
 .footer{
+  position: absolute;
   background-color: black;
   height: 75px;
   margin: 0px;
+  padding-bottom: 0px;
   width: 100%;
   text-align: center;
 }
